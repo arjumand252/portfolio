@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function (){
             id: 1,
             title: "ToxNet: A Multi-layer Network approach to Toxicity Analysis",
             longDescription:"ToxNet is a deep learning model based on the Graph Neural Networks Architecture, capable of categorizing tweets into their correct toxicity label. It constructs a multi-layered network out of the tweets to exploit their syntactic and semantic information. The research paper for this project has been accepted and presented in the Sixth International Conference on Soft Computing and its Engineering Applications, 2024.",
-            image: "images/project1.jpg",
+            image: "proj1_img.png",
             github: "https://github.com/raj248/toxnet_research_code"
         },
         {
@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", function (){
         },
         {
             id: 3,
-            title: "Project 3",
-            longDescription: "More information about Project 3...",
+            title: "Mental Health Condition Prediction using Social Media Analysis",
+            longDescription: "This project provides users with a convinient interface consisting of a basic questionnaire regarding their social media usage. Based on the user's answers, the projects employs an ensemble of 3 models: Fully Connected Nerual Network, AutoEncoder and ResNet. These models provide a multi-label classification of the user's mental health condition.",
             image: "images/project3.jpg",
-            github: "https://github.com/your-username/project3"
+            github: "https://github.com/your-username/project3",
+            video: "proj3_vid.mp4"
         }
     ];
 
@@ -35,6 +36,17 @@ document.addEventListener("DOMContentLoaded", function (){
         document.getElementById("project-title").textContent = project.title;
         document.getElementById("project-long-desc").innerHTML = project.longDescription;
         document.getElementById("github-link").href = project.github;
+        if (project.video) {
+            const videoElement = document.getElementById("project-video");
+            videoElement.src = project.video;
+            videoElement.style.display = "block";
+            document.getElementById("project-img").style.display = "none";
+        } else {
+            const imgElement = document.getElementById("project-img");
+            imgElement.src = project.image;
+            imgElement.style.display = "block";
+            document.getElementById("project-video").style.display = "none";
+        }
     } else {
         document.getElementById("project-details").innerHTML = "<p>Project not found.</p>";
     }

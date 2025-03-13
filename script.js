@@ -4,9 +4,9 @@ document.getElementById("download-resume").addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
         const projects = [
-        { title: "ToxNet: A Multi-layer Network approach to Toxicity Analysis", image: "image1.png", link: "#" },
-        { title: "Another Project", image: "image2.png", link: "#" },
-        { title: "Third Project", image: "image3.png", link: "#" }
+        { title: "ToxNet: A Multi-layer Network approach to Toxicity Analysis", image: "proj1_img.png", link: "project.html?id=1" },
+        { title: "Drowsy Driver Detection using Computer Vision", image: "proj2_img.png", link: "project.html?id=2" },
+        { title: "Mental Health Prediction using Social Media Analysis", image: "proj3_img.jpg", link: "project.html?id=3" }
     ];
     
     const projectList = document.getElementById("project-list");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         projectCard.innerHTML = `
             <h3 class="project-title">${project.title}</h3> <!-- Ensure title is added -->
-            <img src="${project.image}" alt="${project.title}">
+            <img src="${project.image}" alt="${project.title}" class="circular-image">
             <a href="${project.link}" class="btn">View Details</a>
         `;
     
