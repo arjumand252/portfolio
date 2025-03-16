@@ -5,10 +5,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #17080a;
     color: white;
-    font-family: 'Playfair', sans-serif;
+    font-family: 'Big Shoulders', sans-serif;
+    font-size: large;
+    font-weight: 500;
 }
 h2{
     text-align: center;
@@ -61,14 +64,12 @@ main hr{
 }
 .leftSection .button{
     padding: 50px 0;
-    border: 2px solid #E67E22;
 }
 .leftSection .btn{
     padding: 12px;
     background-color: #79B791 ;
     color:white;
     margin-top: 30px;
-    border: 2px solid #E67E22;
     border-radius: 6px;
     font-size: 20px;
     cursor: pointer;
@@ -135,7 +136,6 @@ main hr{
     width: 300px;
     background: #79B791;
     padding: 40px 20px;
-    border: 2px solid #E67E22; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -209,7 +209,6 @@ main hr{
     color: #333;
 }
 
-/* Make experience section horizontal */
 .experience {
     display: flex;
     justify-content: center;
@@ -223,7 +222,6 @@ main hr{
     background: #79B791;
     padding: 20px;
     border-radius: 8px;
-    border: 2px solid #E67E22;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     width: 300px; /* Set a fixed width */

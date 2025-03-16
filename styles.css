@@ -19,7 +19,6 @@
     max-width: 600px;
     background-color: #79B791 ;
     padding: 20px;
-    border: 2px solid #E9C46A;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(83, 65, 65, 0.2);
 }
@@ -42,7 +41,6 @@
     background: #17080a;
     color: white;
     text-decoration: none;
-    border: 2px solid  #E9C46A;
     border-radius: 6px;
 }
 
