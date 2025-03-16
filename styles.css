@@ -1,5 +1,5 @@
 #project-details {
-    background-color: #10002b;
+    background-color: #17080a;
     display: flex;
     color: white;
     justify-content: center;
@@ -17,7 +17,7 @@
 
 .container {
     max-width: 600px;
-    background-color: #3a0160 ;
+    background-color: #79B791 ;
     padding: 20px;
     border: 2px solid #E9C46A;
     border-radius: 10px;
@@ -39,7 +39,7 @@
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #10002b;
+    background: #17080a;
     color: white;
     text-decoration: none;
     border: 2px solid  #E9C46A;
