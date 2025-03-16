@@ -29,22 +29,39 @@
                 <div>But I am an</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn" id="download-resume">Download Resume</button>
+                    <button class="btn" id="download-resume">Resume</button>
                     <a href="https://github.com/arjumand252", target="_blank">
                         <button class="btn">Visit Github</button>
                     </a>
                 </div>
             </div>
             <div class="rightSection">
-                <img src="me.png">
+                <img src="me.png" width="400" height="400">
             </div>
         </section>
         <hr> 
         <section class="secondSection">
             <span class="text-gray">What I have done so far</span>
             <h1>Work Experience</h1>
+            <div class="experience">
+                <div class="job">
+                    <h3>Frontend Developer</h3>
+                    <p class="company">XYZ Tech Solutions | Jan 2022 - Present</p>
+                    <p class="desc">Developing and maintaining web applications with React and modern JavaScript frameworks.</p>
+                </div>
+                <div class="job">
+                    <h3>UI/UX Designer</h3>
+                    <p class="company">Creative Studio | June 2020 - Dec 2021</p>
+                    <p class="desc">Designed intuitive user interfaces and improved user experience for multiple client projects.</p>
+                </div>
+                <div class="job">
+                    <h3>Web Developer</h3>
+                    <p class="company">Freelance | 2018 - 2020</p>
+                    <p class="desc">Built custom websites and web applications for small businesses and startups.</p>
+                </div>
+            </div>
         </section>
-
+        
         <hr>
 
         <section id="projects">
@@ -64,13 +81,7 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="flex">
-            <div class="footer-first">
-                <h3>AR's Portfolio</h3>
-            </div>
-        </div>
-    </footer>
+    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {

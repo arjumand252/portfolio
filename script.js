@@ -4,9 +4,9 @@ document.getElementById("download-resume").addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
         const projects = [
-        { title: "ToxNet: A Multi-layer Network approach to Toxicity Analysis", image: "proj1_img.png", link: "project.html?id=1" },
-        { title: "Drowsy Driver Detection using Computer Vision", image: "proj2_img.png", link: "project.html?id=2" },
-        { title: "Mental Health Prediction using Social Media Analysis", image: "proj3_img.jpg", link: "project.html?id=3" }
+        { title: "ToxNet: A Multi-layer Network approach to Toxicity Analysis", image: "proj1_img.jpeg", link: "project.html?id=1" },
+        { title: "Drowsy Driver Detection using Computer Vision", image: "proj2_img_index.png", link: "project.html?id=2" },
+        { title: "Mental Health Prediction using Social Media Analysis", image: "proj3_img_index.png", link: "project.html?id=3" }
     ];
     
     const projectList = document.getElementById("project-list");

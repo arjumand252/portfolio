@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function (){
             id: 1,
             title: "ToxNet: A Multi-layer Network approach to Toxicity Analysis",
             longDescription:"ToxNet is a deep learning model based on the Graph Neural Networks Architecture, capable of categorizing tweets into their correct toxicity label. It constructs a multi-layered network out of the tweets to exploit their syntactic and semantic information. The research paper for this project has been accepted and presented in the Sixth International Conference on Soft Computing and its Engineering Applications, 2024.",
-            image: "proj1_img.png",
+            image: "proj1_img.jpeg",
             github: "https://github.com/raj248/toxnet_research_code"
         },
         {
@@ -36,16 +36,41 @@ document.addEventListener("DOMContentLoaded", function (){
         document.getElementById("project-title").textContent = project.title;
         document.getElementById("project-long-desc").innerHTML = project.longDescription;
         document.getElementById("github-link").href = project.github;
+        // if (project.video) {
+        //     const videoElement = document.getElementById("project-video");
+        //     videoElement.src = project.video;
+        //     videoElement.style.display = "block";
+        //     document.getElementById("project-img").style.display = "none";
+        // } else {
+        //     const imgElement = document.getElementById("project-img");
+        //     imgElement.src = project.image;
+        //     imgElement.style.display = "block";
+        //     document.getElementById("project-video").style.display = "none";
+        // }
+        const projectMediaContainer = document.getElementById("project-media-container");
+
         if (project.video) {
-            const videoElement = document.getElementById("project-video");
+            // Create a video element dynamically
+            const videoElement = document.createElement("video");
             videoElement.src = project.video;
-            videoElement.style.display = "block";
-            document.getElementById("project-img").style.display = "none";
+            videoElement.controls = true; // Enable controls
+            videoElement.autoplay = true; // Auto-play the video
+            videoElement.loop = true; // Loop the video
+            videoElement.muted = true; // Required for autoplay in some browsers
+            videoElement.classList.add("project-media"); // Apply styling
+
+            // Replace existing image with video
+            projectMediaContainer.innerHTML = ""; // Clear previous content
+            projectMediaContainer.appendChild(videoElement);
         } else {
-            const imgElement = document.getElementById("project-img");
+            // Display the image
+            const imgElement = document.createElement("img");
             imgElement.src = project.image;
-            imgElement.style.display = "block";
-            document.getElementById("project-video").style.display = "none";
+            imgElement.alt = project.title;
+            imgElement.classList.add("project-media");
+
+            projectMediaContainer.innerHTML = "";
+            projectMediaContainer.appendChild(imgElement);
         }
     } else {
         document.getElementById("project-details").innerHTML = "<p>Project not found.</p>";
