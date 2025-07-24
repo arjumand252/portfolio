@@ -1,120 +1,147 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    margin: 0;
     background-color: #17080a;
+    position: relative;
     color: white;
     font-family: 'Big Shoulders', sans-serif;
     font-size: large;
     font-weight: 500;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-nav{
-    display:flex ;
+
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: #79B791 ;
+    background-color: #000000;
     padding: 15px 30px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 0 23px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: white;
 }
-nav ul li :hover{
-    color: #17080a;
+
+nav ul li :hover {
+    color: #29c09d;
     font-size: 1.2rem;
 }
-main hr{
-    border:0;
-    background: #79B791 ;
+
+main hr {
+    border: 0;
+    background: #11090D;
     height: 1.2px;
     margin: 40px 84px;
 }
-.left{
-    font-size:1.0rem; 
+
+.left {
+    font-size: 1.0rem;
 }
-.firstSection{
-    display:flex;
-    justify-content: space-around; 
-    align-items: centre;  
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: centre;
     margin: 100px 0;
 }
-.firstSection > div{
+
+.firstSection>div {
     width: 30%;
 }
-.leftSection{
+
+.leftSection {
     margin-top: 30px;
     font-size: 2.7rem;
 }
-.leftSection .button{
+
+.leftSection .button {
     padding: 50px 0;
 }
-.leftSection .btn{
+
+.leftSection .btn {
     padding: 12px;
-    background-color: #79B791 ;
-    color:white;
+    background-color: #11090D;
+    color: white;
     margin-top: 30px;
     border-radius: 6px;
     font-size: 20px;
     cursor: pointer;
 }
-.rightSection{
+
+.rightSection {
     width: 80%;
 }
-.beige{
-    color: #E67E22 ;
+
+.beige {
+    color: #29c09d;
 }
-.text-gray{
-    color:#E67E22 ;
+
+.text-gray {
+    color: #29c09d;
 }
-#element{
-    color: #E67E22 ;
+
+#element {
+    color: #29c09d;
 }
-.secondSection{
+
+.secondSection {
     max-width: 80vw;
     margin: auto;
     height: 80vh;
 }
-.secondSection h1{
+
+.secondSection h1 {
     font-size: 2.0rem;
 }
-.secondSection .box{
+
+.secondSection .box {
     background: white;
     width: 80vw;
     height: 2px;
     margin: 56px 0;
 }
-.secondSection :vertical{
-     height: 93ox;
-     width: 1px;
-     background-color: white;
-     margin: 0 100px;
+
+.secondSection :vertical {
+    height: 93ox;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
 }
-.image-top{
-    width:23px;
+
+.image-top {
+    width: 23px;
 }
-.vertical-title{
+
+.vertical-title {
     position: relative;
     top: 75px;
     width: 150px;
 }
-.vertical-desc{
+
+.vertical-desc {
     position: relative;
     top: 86px;
     color: white;
@@ -122,9 +149,10 @@ main hr{
     font-size: 9px;
 }
 
-#projects h2{
+#projects h2 {
     margin-bottom: 50px;
 }
+
 #project-list {
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +162,7 @@ main hr{
 
 .project-card {
     width: 300px;
-    background: #79B791;
+    background: #11090D;
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -153,15 +181,16 @@ main hr{
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #E67E22;
+    background: #29c09d;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background: #8d6e4a;
+    background: #13a180;
 }
+
 .project-title {
     font-size: 18px;
     font-weight: bold;
@@ -170,18 +199,21 @@ main hr{
     margin-bottom: 10px;
     display: block;
 }
+
 #contact-section {
     text-align: center;
     margin-top: 50px;
 }
+
 #contact-section h2 {
     font-family: 28px;
     margin-bottom: 20px;
 }
+
 #contact {
     margin-top: 20px;
     padding: 20px 20px;
-    background: #79B791;
+    background: #0f1419 ;
     color: white;
     text-align: left;
 }
@@ -213,18 +245,20 @@ main hr{
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
     max-width: 1000px;
     margin: auto;
 }
 
 .job {
-    background: #79B791;
+    background: #11090D;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    width: 300px; /* Set a fixed width */
+    width: 300px;
+    /* Set a fixed width */
     transition: transform 0.3s ease;
 }
 
@@ -248,10 +282,146 @@ main hr{
     line-height: 1.6;
 }
 
+
+
 /* Responsive - Stack vertically on smaller screens */
-@media (max-width: 768px) {
-    .experience {
+@media (max-width: 1400px) {
+
+    /* body{
+        background-color: red;
+    } */
+    .box {
+        flex-direction: column;
+    }
+
+    .firstSection {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .firstSection>div {
+        width: 80%;
+    }
+
+    .leftSection {
+        align-items: center;
+        width: 100%;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .rightSection {
+        width: 721px !important;
+    }
+
+    .vertical-title,
+    .vertical-desc {
+        left: 45px;
+    }
+
+    .secondSection .box {
+        width: 50vw;
+    }
+
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .project-card {
+        width: 70%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Cosmic Scrollable Background CSS */
+
+.cosmic-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(180deg, 
+        #000000 0%,
+        #0a0a1a 20%,
+        #1a0a2e 40%,
+        #16213e 60%,
+        #0f3460 80%,
+        #533483 100%
+    );
+    transition: all 0.3s ease;
+}
+
+.cosmic-stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+        radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.9), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: cosmic-twinkle 3s ease-in-out infinite alternate;
+}
+
+@keyframes cosmic-twinkle {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.cosmic-nebula {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 20% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(75, 0, 130, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 40% 80%, rgba(25, 25, 112, 0.1) 0%, transparent 50%);
+    animation: cosmic-nebula-drift 8s ease-in-out infinite alternate;
+}
+
+@keyframes cosmic-nebula-drift {
+    0% { transform: translateX(-20px) scale(1); }
+    100% { transform: translateX(20px) scale(1.05); }
+}
+
+.cosmic-scroll-indicator {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.345);
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.cosmic-scroll-progress {
+    width: 100%;
+    background: linear-gradient(180deg, purple, #c41bb6,  #264ab7, #0f7090);
+    border-radius: 2px;
+    transition: height 0.1s ease;
+    height: 0%;
+}
+
+/* Optional: Style for content that sits on top of the cosmic background */
+.cosmic-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    /* text-shadow: 0 0 10px rgba(0,0,0,0.5); */
 }
