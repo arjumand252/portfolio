@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (){
         {
             id: 1,
             title: "Skinwise: Your Agentic AI Skincare Assistant",
-            longDescription: "Skinwise is an interactive, full-stack AI skincare assistant developed using multi-agent orchestration (PhiData + Groq), tailored to answer questions reagrding skincare. It feature automated query classification and agent routing via Wikipedia, SerpAPI and web crawler agents to provide tailored insights. The React framework provides it a sleek UI along with a FLask backend.",
+            longDescription: "Skinwise is an interactive, full-stack AI skincare assistant developed using multi-agent orchestration (PhiData + Groq), tailored to answer questions reagrding skincare. It feature automated query classification and agent routing via Wikipedia, SerpAPI and web crawler agents to provide tailored insights. The React framework provides it a sleek UI along with a Flask backend.",
             image: "skincare_5.png",
             github: "https://github.com/arjumand252/Skinwise_Agentic_AI",
             // video: "skincare_5.png"

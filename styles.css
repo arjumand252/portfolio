@@ -1,4 +1,8 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
 #project-details {
+    background: linear-gradient(180deg,black, purple,  #264ab7, #000608);
     background-color: #17080a;
     display: flex;
     color: white;
@@ -6,21 +10,23 @@
     align-items: center;
     height: 100vh;
     min-height: 50px;
+    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 #proj-long-desc {
     display: block !important;
     visibility: visible !important;
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
     color: #333;
 }
 
 .container {
     max-width: 600px;
-    background-color: #79B791 ;
+    background-color: rgb(0,0,0);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(83, 65, 65, 0.2);
+    box-shadow: 4px 0 4px 8px rgba(83, 65, 65, 0.2);
 }
 
 .container img {
@@ -38,14 +44,14 @@
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #17080a;
+    background:  #29c09d;
     color: white;
     text-decoration: none;
     border-radius: 6px;
 }
 
 .btn:hover {
-    background: #8d6e4a;
+    background:#13a180;
 }
 
 

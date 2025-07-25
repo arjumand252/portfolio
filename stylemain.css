@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -12,9 +13,9 @@ body {
     background-color: #17080a;
     position: relative;
     color: white;
-    font-family: 'Big Shoulders', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: large;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h2 {
@@ -28,6 +29,8 @@ nav {
     height: 50px;
     background-color: #000000;
     padding: 15px 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 nav ul {
@@ -74,6 +77,8 @@ main hr {
 
 .leftSection {
     margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     font-size: 2.7rem;
 }
 
@@ -114,7 +119,10 @@ main hr {
 }
 
 .secondSection h1 {
-    font-size: 2.0rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    padding-bottom: 20px;;
 }
 
 .secondSection .box {
@@ -122,6 +130,7 @@ main hr {
     width: 80vw;
     height: 2px;
     margin: 56px 0;
+    display: flex;
 }
 
 .secondSection :vertical {
@@ -150,6 +159,7 @@ main hr {
 }
 
 #projects h2 {
+    font-family: 'Inter', sans-serif;
     margin-bottom: 50px;
 }
 
@@ -193,7 +203,8 @@ main hr {
 
 .project-title {
     font-size: 18px;
-    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700px;
     text-align: center;
     color: white;
     margin-bottom: 10px;
@@ -206,7 +217,7 @@ main hr {
 }
 
 #contact-section h2 {
-    font-family: 28px;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -238,14 +249,14 @@ main hr {
 #work-experience h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     color: #333;
 }
 
 .experience {
     display: flex;
+    gap: 40px;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
     /* Ensures responsiveness */
     max-width: 1000px;
     margin: auto;
@@ -274,12 +285,14 @@ main hr {
 .company {
     font-weight: bold;
     color: rgba(255, 255, 255, 0.899);
-    margin: 5px 0;
+    /* margin: 5px 5px; */
+    padding: 15px 0 15px 0;
 }
 
 .desc {
     color: rgba(255, 255, 255, 0.76);
     line-height: 1.6;
+    padding: 15px 0 15px 0;
 }
 
 
