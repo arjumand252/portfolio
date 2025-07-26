@@ -27,7 +27,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: #000000;
+    background-color: #11090D;
     padding: 15px 30px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -49,15 +49,15 @@ nav ul li a {
 }
 
 nav ul li :hover {
-    color: #29c09d;
+    color: #13a180;
     font-size: 1.2rem;
 }
 
 main hr {
     border: 0;
     background: #11090D;
-    height: 1.2px;
-    margin: 40px 84px;
+    height: 2px;
+    margin: 40px 40px;
 }
 
 .left {
@@ -65,21 +65,29 @@ main hr {
 }
 
 .firstSection {
+    font-family: 'Inter', sans-serif;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: centre;
-    margin: 100px 0;
+    margin: 30px 75px;
+    background: #11090D;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 500px;
 }
 
-.firstSection>div {
+/* .firstSection>div {
     width: 30%;
-}
+} */
 
 .leftSection {
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 2.7rem;
+    font-size: 1.5rem;
 }
 
 .leftSection .button {
@@ -88,30 +96,101 @@ main hr {
 
 .leftSection .btn {
     padding: 12px;
-    background-color: #11090D;
-    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background-color:  #13a180;
+    color: black;
     margin-top: 30px;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
-.rightSection {
-    width: 80%;
-}
+/* .rightSection {
+    height:200px;
+} */
 
 .beige {
-    color: #29c09d;
+    color: #13a180;
 }
 
 .text-gray {
-    color: #29c09d;
+    color: #13a180;
 }
 
 #element {
-    color: #29c09d;
+    color: #13a180;
 }
 
+.sectionContainer {
+    width: 30%;
+    background: #462b3888;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.secondSectionContainer {
+    width: 70%;
+    background: #462b3888;
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondSectionContainer h3{
+    padding: 12px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+.secondSectionContainer h5{
+    padding: 20px 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.secondSectionContainer p{
+    /* padding: px; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.education{
+    background: #462b3888;
+    padding: 0px 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2px;
+}
+.education .h3 {
+    padding: 0px;
+}
+.edu {
+    width: 90%;
+    background: #230e1888;
+    margin: 5px 10px;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+}
+
+.edu .p{
+    margin: 0px;
+}
+
+
+.image{
+    height: 200px;
+    width: auto;
+    margin-left: 70px;
+    object-fit: cover;     /* ensures the image fills the circle nicely */
+    border-radius: 50%;
+    border: 2px solid white;
+}
 .secondSection {
     max-width: 80vw;
     margin: auto;
@@ -140,9 +219,6 @@ main hr {
     margin: 0 100px;
 }
 
-.image-top {
-    width: 23px;
-}
 
 .vertical-title {
     position: relative;
@@ -172,7 +248,7 @@ main hr {
 
 .project-card {
     width: 300px;
-    background: #11090D;
+    background: #2c1b1b88;
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -191,14 +267,14 @@ main hr {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #29c09d;
-    color: white;
+    background: #13a180;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background: #13a180;
+    background: #086b54;
 }
 
 .project-title {
@@ -224,7 +300,7 @@ main hr {
 #contact {
     margin-top: 20px;
     padding: 20px 20px;
-    background: #0f1419 ;
+    background:#11090D;
     color: white;
     text-align: left;
 }
@@ -246,15 +322,28 @@ main hr {
     text-align: center;
 }
 
-#work-experience h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    color: #333;
+.work-header {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+.work-header h2 {
+  color: #00d1b2;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.work-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
 }
 
 .experience {
     display: flex;
+    text-align: center;
     gap: 40px;
     justify-content: center;
     /* Ensures responsiveness */
@@ -263,7 +352,7 @@ main hr {
 }
 
 .job {
-    background: #11090D;
+    background: #241e29;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -295,23 +384,21 @@ main hr {
     padding: 15px 0 15px 0;
 }
 
-
-
-/* Responsive - Stack vertically on smaller screens */
 @media (max-width: 1400px) {
-
-    /* body{
-        background-color: red;
-    } */
-    .box {
+    .content { 
+        display: flex;
         flex-direction: column;
+        gap: 2rem; 
     }
-
     .firstSection {
         flex-direction: column-reverse;
         align-items: center;
     }
-
+    .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .firstSection>div {
         width: 80%;
     }
@@ -321,39 +408,34 @@ main hr {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
-
-    .rightSection {
-        width: 721px !important;
-    }
-
-    .vertical-title,
-    .vertical-desc {
-        left: 45px;
-    }
-
-    .secondSection .box {
-        width: 50vw;
-    }
-
     .secondSection {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .job {
-        width: 85%;
-        padding: 10px;
+    .secondSection .box {
+        width: 50vw;
     }
-
-    .project-card {
-        width: 70%;
-        align-items: center;
+    .experience{
         display: flex;
         flex-direction: column;
+        padding-bottom: 20px;
+        margin-bottom: 2rem;
     }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .project-list{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }   
 }
 
 /* Cosmic Scrollable Background CSS */
@@ -367,11 +449,16 @@ main hr {
     z-index: -1;
     background: linear-gradient(180deg, 
         #000000 0%,
-        #0a0a1a 20%,
-        #1a0a2e 40%,
-        #16213e 60%,
-        #0f3460 80%,
-        #533483 100%
+        #0a0a1a 10%,
+        #1a0a2e 20%,
+        #16213e 30%,
+        #0f3460 40%,
+        #533483 50%,
+        #0f3460 60%,
+        #16213e 70%,
+        #1a0a2e 80%,
+        #0a0a1a 90%,
+        #000000 100%
     );
     transition: all 0.3s ease;
 }
@@ -425,7 +512,7 @@ main hr {
 
 .cosmic-scroll-progress {
     width: 100%;
-    background: linear-gradient(180deg, purple, #c41bb6,  #264ab7, #0f7090);
+    background: linear-gradient(180deg, purple,  #264ab7);
     border-radius: 2px;
     transition: height 0.1s ease;
     height: 0%;

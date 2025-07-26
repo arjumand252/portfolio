@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projects = [
         { title: "Skinwise: Your Agentic AI Skincare Assistant", image: "skincare_3.png", link: "project.html?id=1"},
         { title: "ToxNet: A Multi-layer Network approach to Toxicity Analysis", image: "proj1_img.jpeg", link: "project.html?id=2" },
-        { title: "Drowsy Driver Detection using Computer Vision", image: "proj2_img_index.png", link: "project.html?id=3" },
+        { title: "Drowsy Driver Detection using Computer Vision", image: "proj2_img.png", link: "project.html?id=3" },
         { title: "Mental Health Prediction using Social Media Analysis", image: "proj3_img_index.png", link: "project.html?id=4" }
     ];
 
@@ -32,13 +32,13 @@ class CosmicBackground {
         this.ticking = false;
         
         // Color transitions for different scroll positions
-        this.colorStops = [
+        const colorStops = [
             { position: 0, colors: ['#000000', '#0a0a1a', '#1a0a2e', '#16213e', '#0f3460', '#533483'] },
-            { position: 0.2, colors: ['#0a0a1a', '#1a0a2e', '#16213e', '#0f3460', '#533483', '#8a2be2'] },
-            { position: 0.4, colors: ['#1a0a2e', '#16213e', '#0f3460', '#533483', '#8a2be2', '#4b0082'] },
-            { position: 0.6, colors: ['#16213e', '#0f3460', '#533483', '#8a2be2', '#4b0082', '#191970'] },
-            { position: 0.8, colors: ['#0f3460', '#533483', '#8a2be2', '#4b0082', '#191970', '#000080'] },
-            { position: 1, colors: ['#533483', '#8a2be2', '#4b0082', '#191970', '#000080', '#1e1e3f'] }
+            { position: 0.2, colors: ['#0a0a1a', '#1a0a2e', '#16213e', '#0f3460', '#2d1b69', '#4b0082'] },
+            { position: 0.4, colors: ['#1a0a2e', '#16213e', '#0f3460', '#2d1b69', '#4b0082', '#301934'] },
+            { position: 0.6, colors: ['#16213e', '#0f3460', '#2d1b69', '#4b0082', '#301934', '#1a0a2e'] },
+            { position: 0.8, colors: ['#0f3460', '#2d1b69', '#4b0082', '#301934', '#1a0a2e', '#0a0a1a'] },
+            { position: 1, colors: ['#4b0082', '#301934', '#1a0a2e', '#0a0a1a', '#050505', '#000000'] }
         ];
         
         this.init();
