@@ -409,14 +409,16 @@ main hr {
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: 800px) {
     .content {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 5%;
     }
-
+    #hide-this-one {
+        margin: 40%;
+    }
     .nav .left {
         font-size: large;
         font-weight: 300;
@@ -447,13 +449,13 @@ main hr {
     }
 
     .image {
-        height: 100px;
+        height: 150px;
         margin-top: 10px;
         margin-left: 34%;
     }
 
     .leftSection {
-        margin-left: auto;
+        margin-left: 2%;
         text-align: center;
         align-items: center;
         /* if using flexbox */
@@ -489,6 +491,7 @@ main hr {
     .experience {
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
@@ -511,7 +514,7 @@ main hr {
 
     #projects {
         position: relative;
-        margin-top: 100px;
+        margin-top: 180px;
         /* creates space from previous section */
     }
 
