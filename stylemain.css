@@ -57,7 +57,7 @@ main hr {
     border: 0;
     background: #11090D;
     height: 2px;
-    margin: 40px 40px;
+    margin: 80px 40px;
 }
 
 .left {
@@ -98,7 +98,7 @@ main hr {
     padding: 12px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    background-color:  #13a180;
+    background-color: #13a180;
     color: black;
     margin-top: 30px;
     border-radius: 6px;
@@ -132,6 +132,7 @@ main hr {
     flex-direction: column;
     justify-content: space-around;
 }
+
 .secondSectionContainer {
     width: 70%;
     background: #462b3888;
@@ -141,33 +142,36 @@ main hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.secondSectionContainer h3{
+.secondSectionContainer h3 {
     padding: 12px 12px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
-.secondSectionContainer h5{
+
+.secondSectionContainer h5 {
     padding: 20px 10px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
-.secondSectionContainer p{
+.secondSectionContainer p {
     /* padding: px; */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
-.education{
+.education {
     background: #462b3888;
     padding: 0px 5px 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 2px;
 }
+
 .education .h3 {
     padding: 0px;
 }
+
 .edu {
     width: 90%;
     background: #230e1888;
@@ -178,19 +182,21 @@ main hr {
     font-size: medium;
 }
 
-.edu .p{
+.edu .p {
     margin: 0px;
 }
 
 
-.image{
+.image {
     height: 200px;
     width: auto;
     margin-left: 70px;
-    object-fit: cover;     /* ensures the image fills the circle nicely */
+    object-fit: cover;
+    /* ensures the image fills the circle nicely */
     border-radius: 50%;
     border: 2px solid white;
 }
+
 .secondSection {
     max-width: 80vw;
     margin: auto;
@@ -201,7 +207,8 @@ main hr {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 2.2rem;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
+    ;
 }
 
 .secondSection .box {
@@ -248,10 +255,11 @@ main hr {
 
 .project-card {
     width: 300px;
-    background: #2c1b1b88;
+    background: #161616;
     padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline-width: 5px;
+    outline-color: rgba(74, 74, 74, 0.2);
     text-align: center;
     margin-bottom: 30px;
 }
@@ -277,6 +285,11 @@ main hr {
     background: #086b54;
 }
 
+#projects {
+    margin-top: 30px;
+    text-align: center;
+}
+
 .project-title {
     font-size: 18px;
     font-family: 'Inter', sans-serif;
@@ -300,7 +313,7 @@ main hr {
 #contact {
     margin-top: 20px;
     padding: 20px 20px;
-    background:#11090D;
+    background: #11090D;
     color: white;
     text-align: left;
 }
@@ -320,25 +333,27 @@ main hr {
     background: #f8f9fa;
     padding: 50px 20px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .work-header {
-  max-width: 800px;
-  margin: 0 auto 50px auto;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
 }
+
 .work-header h2 {
-  color: #00d1b2;
-  font-weight: 500;
-  font-size: 1.25rem;
-  margin-bottom: 10px;
+    color: #00d1b2;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
 }
 
 .work-header h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0;
-  text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
 }
 
 .experience {
@@ -352,14 +367,23 @@ main hr {
 }
 
 .job {
-    background: #241e29;
+    background: #161616;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    outline-width: 5px;
+    outline-color: rgba(74, 74, 74, 0.2);
     text-align: left;
     width: 300px;
     /* Set a fixed width */
     transition: transform 0.3s ease;
+}
+
+.experience hr {
+    all: unset; /* Reset everything */
+    display: block;
+    margin: 10px 5px;
+    height: 2px;
+    background-color:  rgb(171, 170, 170);
 }
 
 .job:hover {
@@ -384,58 +408,113 @@ main hr {
     padding: 15px 0 15px 0;
 }
 
+
 @media (max-width: 1400px) {
-    .content { 
+    .content {
         display: flex;
         flex-direction: column;
-        gap: 2rem; 
+        flex-wrap: wrap;
+        gap: 5%;
     }
+
+    .nav .left {
+        font-size: large;
+        font-weight: 300;
+    }
+
+    .nav .right {
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: smaller;
+        font-weight: 50;
+    }
+
     .firstSection {
-        flex-direction: column-reverse;
-        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        /* width:min-content; */
+        margin: 10px 10px;
     }
+
+    .sectionContainer {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .firstSection>div {
-        width: 80%;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 34%;
     }
 
     .leftSection {
+        margin-left: auto;
+        text-align: center;
         align-items: center;
+        /* if using flexbox */
+        justify-content: center;
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    .secondSectionContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .secondSectionContainer h3 {
+        text-align: center;
+    }
+
+    .edu {
+        margin: 5px;
+    }
+
+    #work-experience {
+        margin-bottom: 80px;
+    }
+
+    .experience {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
+    .experience hr {
+        border: none;
+        height: 2px;
+        background-color: rgb(171, 170, 170);
+        margin: 8px 5px;
+        padding: 0;
+    }
+
+    .job {
+        margin-bottom: 20px;
+        ;
+    }
+
     .secondSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-bottom: 300px;
     }
-    .secondSection .box {
-        width: 50vw;
+
+    #projects {
+        position: relative;
+        margin-top: 100px;
+        /* creates space from previous section */
     }
-    .experience{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-        margin-bottom: 2rem;
-    }
-    .projects {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2rem;
-    }
-    .project-list{
-        display: flex;
-        flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }   
+
 }
 
 /* Cosmic Scrollable Background CSS */
@@ -447,19 +526,18 @@ main hr {
     width: 100%;
     height: 100vh;
     z-index: -1;
-    background: linear-gradient(180deg, 
-        #000000 0%,
-        #0a0a1a 10%,
-        #1a0a2e 20%,
-        #16213e 30%,
-        #0f3460 40%,
-        #533483 50%,
-        #0f3460 60%,
-        #16213e 70%,
-        #1a0a2e 80%,
-        #0a0a1a 90%,
-        #000000 100%
-    );
+    background: linear-gradient(180deg,
+            #000000 0%,
+            #0a0a1a 10%,
+            #1a0a2e 20%,
+            #16213e 30%,
+            #0f3460 40%,
+            #533483 50%,
+            #0f3460 60%,
+            #16213e 70%,
+            #1a0a2e 80%,
+            #0a0a1a 90%,
+            #000000 100%);
     transition: all 0.3s ease;
 }
 
@@ -467,20 +545,25 @@ main hr {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: 
+    background-image:
         radial-gradient(2px 2px at 20px 30px, #eee, transparent),
-        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.8), transparent),
         radial-gradient(1px 1px at 90px 40px, #fff, transparent),
-        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
-        radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.9), transparent);
+        radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(2px 2px at 160px 30px, rgba(255, 255, 255, 0.9), transparent);
     background-repeat: repeat;
     background-size: 200px 100px;
     animation: cosmic-twinkle 3s ease-in-out infinite alternate;
 }
 
 @keyframes cosmic-twinkle {
-    0% { opacity: 0.3; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .cosmic-nebula {
@@ -488,14 +571,19 @@ main hr {
     width: 100%;
     height: 100%;
     background: radial-gradient(ellipse at 20% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(75, 0, 130, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 40% 80%, rgba(25, 25, 112, 0.1) 0%, transparent 50%);
+        radial-gradient(ellipse at 80% 20%, rgba(75, 0, 130, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 40% 80%, rgba(25, 25, 112, 0.1) 0%, transparent 50%);
     animation: cosmic-nebula-drift 8s ease-in-out infinite alternate;
 }
 
 @keyframes cosmic-nebula-drift {
-    0% { transform: translateX(-20px) scale(1); }
-    100% { transform: translateX(20px) scale(1.05); }
+    0% {
+        transform: translateX(-20px) scale(1);
+    }
+
+    100% {
+        transform: translateX(20px) scale(1.05);
+    }
 }
 
 .cosmic-scroll-indicator {
@@ -512,7 +600,7 @@ main hr {
 
 .cosmic-scroll-progress {
     width: 100%;
-    background: linear-gradient(180deg, purple,  #264ab7);
+    background: linear-gradient(180deg, purple, #264ab7);
     border-radius: 2px;
     transition: height 0.1s ease;
     height: 0%;
