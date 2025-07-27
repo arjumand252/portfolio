@@ -311,21 +311,31 @@ main hr {
 }
 
 #contact {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 20px 20px;
     background: #11090D;
     color: white;
     text-align: left;
 }
 
+.contact-info{
+    display: flex;
+    gap: 8px;
+}
+
 .contact-info a {
     color: rgba(245, 245, 245, 0.832);
     text-decoration: none;
-    font-weight: bold;
+    margin-top: 5px;
 }
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+.contact-info .icons {
+    height: 30px;
+    object-fit: contain;
 }
 
 /* Work Experience Section */
@@ -451,7 +461,7 @@ main hr {
     .image {
         height: 150px;
         margin-top: 10px;
-        margin-left: 34%;
+        margin-left: 30%;
     }
 
     .leftSection {
@@ -516,6 +526,9 @@ main hr {
         position: relative;
         margin-top: 180px;
         /* creates space from previous section */
+    }
+    #contact {
+        font-size: small;
     }
 
 }
